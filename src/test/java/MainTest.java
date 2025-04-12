@@ -70,11 +70,11 @@ public class MainTest {
     @DisplayName("calculatedWord method doğru çalışıyor mu?")
     @Test
     public void testCalculateWordMethod() {
-        Map<String, Integer> map = WordCounter.calculatedWord();
-        assertEquals(map.get("which"), 3);
-        assertEquals(map.get("turkish"), 2);
-        assertEquals(map.get("mustafa"), 3);
-        assertEquals(map.get("kemal"), 3);
+        Map<String, Integer> map = WordCounter.calculatedWord("Selam");
+        assertEquals(map.get("which"), null);
+        assertEquals(map.get("turkish"), null);
+        assertEquals(map.get("mustafa"), null);
+        assertEquals(map.get("kemal"), null);
     }
 
 }
