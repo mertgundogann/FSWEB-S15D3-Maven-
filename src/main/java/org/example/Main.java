@@ -7,7 +7,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-
+        String mert;
         List<Employee> employees = new LinkedList<>();
         employees.add(new Employee(1, "Dogancan", "Kinik"));
         employees.add(new Employee(1, "Dogancan", "Kinik"));
